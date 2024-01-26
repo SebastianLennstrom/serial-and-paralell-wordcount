@@ -1,0 +1,546 @@
+Strength Weaknesess Analysis Regarding System Maintenance In A Small Company
+
+
+Oskar Sjödin
+Student
+Högskolan Dalarna
+Borlänge, Sweden
+h21ossjo@du.se
+Simon Österberg
+Student
+Högskolan Dalarna
+Borlänge, Sweden
+h21siost@du.se
+Sebastian Lennström
+Student
+Högskolan Dalarna
+Borlänge, Sweden
+h21seble@du.se
+Ronja Steindahl
+Student
+Högskolan Dalarna
+Borlänge, Sweden
+h20ronjs@du.se
+
+
+ABSTRACT
+This study aims to perform a SWOT analysis with focus at Strength and weaknesses at a small company in order to give suggestions as well as describe strengths and weaknesses regarding to System Maintenance. As research methodology we performed semi structured interviews with the CTO and the CIO at small software company with their office in Borlänge, Sweden, however they do have offices in other countries as well. We found that they used their model with some influence from ITIL. Overall, there were many strengths and the company had a good understanding of how to effectively manage their systems. Company has great communication and uses technological solution for their system maintenance such as Kubernetes and Azure. A weakness is we discovered was that clear responsibilities and roles regarding system maintenance was missing. They could also improve their work in regards to handling of incidents as the way it is reported and handled depends on things such as time of day. 
+
+
+CONTENT
+
+ABSTRACT	1
+KEYWORDS	4
+I.	INTRODUCTION	5
+A.	Background	5
+B.	Previous Research	5
+C.	Problem formulation and research questions	5
+D.	Objective	5
+E.	Limitations for our study	6
+II.	THEORETICAL FRAMEWORK	6
+A.	ITSM	6
+B.	System maintenance	6
+C.	ITIL	6
+III.	RESEARCH METHODOLOGY	6
+A.	Literature Review	6
+B.	Case study	7
+C.	Interviews	7
+D.	Analysis	7
+IV.	RESULTS	7
+A.	Definitions	7
+a)	Azure	7
+b)	Kubernetes	7
+B.	Empirical findings	7
+C.	Analysis	8
+a)	Documentation	8
+b)	Own Model	8
+c)	Contact with customers	8
+d)	Changes	9
+e)	Responsibilities	9
+f)	Contact with customers	9
+g)	Importance	9
+h)	Timing	9
+i)	Communication	9
+j)	Testing	9
+k)	Incidents	9
+l)	Evolving Model	9
+m)	Eagerness to learn	9
+n)	Reactiveness	9
+o)	Disasters	10
+V.	DISCUSSION AND CONCLUSION	10
+A.	Own model	10
+B.	Best practices	10
+C.	Improvements	10
+D.	Proactive	10
+E.	Responsibilities	10
+F.	Suggestions	10
+G.	Criticism of methodology	11
+H.	Further Research	11
+I.	REFERENCES	12
+J.	APPENDIX	13
+Appendix 1	13
+Appendix 2	20
+Appendix 3	28
+
+
+KEYWORDS
+
+IT
+ITIL
+ITSM
+SWOT
+Small Company
+System maintenance
+Case Study
+
+
+I. INTRODUCTION
+A. Background
+Every organization in the modern landscape understands the advantages of including IT architecture and systems as well as the internet into their organization. However not all organizations understand the importance of adequate management of the IT-systems. It is therefore important that every organization that deals with IT has some type of orderly process in which they can rely on to meaningfully manage and maintain the IT-systems (Thejendra, 2014).
+In order to maintain adequate system management, it is important to understand strengths and limitations with the chosen approach. 
+B. Previous Research
+Literature
+Reasoning
+Knapp (2010) &
+Thejendra (2014) &
+Flynn (2018)
+Includes definitions of ITSM which is used for the theoretical framework for this study which is then used for our analysis.
+Edwards (1984)
+Includes a definition of system maintenance which is used for the theoretical framework for this study which is then used for our analysis.
+Riggs (1968)
+Included as it mentions relevant information about what’s important to focus on within ITSM, information which we use in our analysis.
+Melendez, Davila, & Pessoa (2015)
+It contains a study that focused on how small companies implement ITSM frameworks and what is most important for these companies to think about.This is relevant is it can help us find what is important for the company our study focuses on.
+Table 1
+Among the previous research we found on the topic of system maintenance we found literature about what system maintenance is and how frameworks and models can be used to make the job with it easier.
+ITSM can be an expensive implementation in an organization which can lead to difficulties when small size businesses are trying to implement it. Melendez et al(2015) study on this topic found that there are several difficulties with implementing these types of frameworks into smaller businesses. The main difficulties with these implementations were difficulties in adopting processes, the framework being too complex, lack of awareness when it comes to optimizing processes, lack of resources/knowledge for the adoption of a model and lack of motivation. Furthermore, it is also important that the adopted model does not only solve a problem or needs that a company currently has but should also have a positive impact on the business objectives. Hence adoption of a model requires great understanding of both the existing models and standards but also the business objective. Moreover, adoption of a model/models requires training of staff, adoption of definition and roles, monitoring and engagement from the staff in order to be successful (Melendez, Davila, & Pessoa, 2015). 
+C. Problem formulation and research questions
+To find out how a small company can improve their work with system maintenance a SWOT analysis will be conducted.
+Research questions:
+* What are the Strengths and weaknesses of how a small company is conducting their system maintenance?
+* How can the company reduce their weaknesses?
+D. Objective
+This study aims to describe the Strengths and Weaknesses of a small software company located in Borlänge, Sweden regarding their work with their system maintenance. They do however have offices in other countries as well. To keep the company and staff anonymous in this report we will call them Company. Furthermore, we are going to analyze and present weaknesses and strengths which could help Company to improve their work with system maintenance. This is important as this research could help Company identify ways that they could improve and streamline their work methods regarding the field of system maintenance.
+This will be done by conducting a SWOT-analysis where the focus will be on the strengths and the weaknesses.
+We contribute with the knowledge we gained during our System Maintenance and test of IT-systems course. Using this knowledge to analyze and come with suggestions on what can be improved.
+E. Limitations for our study
+We have decided that for this study our focus will be on the strengths and weaknesses of the ITSM of Company. This means that our main focus will be to find what internal strengths as well internal weaknesses might be, if we during the interview stumble on to some small things that could be linked to opportunities and threats, we will off course mention them, but this will not be the main focus. The reason of us limiting our study this way is the limitation of both time and resources from our side. By limiting us to a SWOT analysis with focus on SW we can go deeper in those certain aspects.
+II. THEORETICAL FRAMEWORK 
+A. ITSM
+ITSM is an integrated and orderly process approach that focuses on managing the full life cycle of IT-services. It aims to provide value and satisfaction for customers and employees. Furthermore, it aligns an IT-organization with their business goals and ensure that the business comply with regulatory controls. ITSM provides efficient and effective processes which enables IT-staff and customers on what and how things should be done (Knapp, 2010).
+ITSM frameworks are different approaches to ITSM and consist of guidelines and best practices which organizations can adapt and combine in order to best suit their needs. Frameworks can be more or less detailed in their approach to ITSM (Thejendra, 2014). Some can be expensive to adopt and be seen as detailed processes that should be adopted rather than adopted to the organization, an example of this is the ITIL framework described below (Axelos, 2019). Other frameworks exist that as well are lightweight and mainly focuses on the key value processes for the organization such as the framework FitSM. (Flynn, 2018) (FitSM, 2019).
+B. System maintenance
+System maintenance has many different definitions one of which can be found in Chris Edwards article from 1984. Edwards (1984) defines system maintenance as:
+"An alteration to any systems element necessary to eliminate a fault in that element, adapt to a change in that or any other element, or to improve upon the performance characteristics of an element.” (Edwards, 1984)
+Using more modern terms this definition of system maintenance includes bug fixing and updating a software or other system components. We’ve chosen this definition of system maintenance for this study as we are going to conduct our interviews at a smaller company which may lead to a narrower definition of system maintenance being preferred over the more vast definitions created more recently.
+C. ITIL
+Information Technology Infrastructure Library, shortened ITIL, is an ITSM framework which contains suggestions and guidelines for organizations to follow to effective their work. ITIL also provides guidance, training, and certification programs for these organizations (Axelos, 2019).
+ITIL contains a set of processes and practices that divides the work being done at an IT organization. 
+III. RESEARCH METHODOLOGY
+Research methodology for this SWOT analysis will be a qualitive case study. We will employ qualitative interviews as our research methodology for data collection. Subsequently, we will perform an analysis on the data gathered from the interviews based on our research. 
+A. Literature Review
+A literature review is important to be able to gather information about previous research as well as central concepts. The relevant literature was acquired in a few different ways. Firstly, there is the provided course literature that covers relevant subjects in this report.
+To find more information and relevant literature regarding this report, google scholar and Summon via Dalarna University’s library will be used. The scope of the literature search is focused on research done on SWOT-analysis as well as reports using SWOT-analysis within the scope of system management. This is done to gather information on how SWOT-analysis can be carried out and what is important to remember regarding it. The main focus of the report will be on the strengths and weaknesses of the SWOT-analysis.
+B. Case study
+We are going to perform a qualitative case study. We choose this method since the aim of the report was to analyze the strengths weaknesses as well as maybe some opportunities and threats at Company. Because of this we found a case study to be a suitable research methodology. 
+C. Interviews
+We will perform two interviews with the CTO and CIO at Company.  These interviews will be semi structured as we want to be able to remove or change a question as needed as well as ask follow-up questions if we find something interesting that could be of value for the analysis part. Since we are doing a SWOT analysis our main focus will be on finding Strengths and weaknesses of the company by analyzing the answers reviewed during the interviews (Oates, Griffiths, & McLean, 2022). Some of the questions will also be based on the categorization of work being done at a company mentioned in ITIL such as questions about suppliers relating to the supplier management process and continuity management laying the groundwork for the questions related to disaster handling.
+D. Analysis
+(An, Teoli, & Sanvictores, 2022) explains that a SWOT (strengths, weaknesses, opportunities, and threat) analysis, is a business strategy tool used to assess how an organization compares to its competition. The analysis can be applied to both business and on an individual level to assess a person's situation versus their weaknesses. SWOT is often split into two separate parts; the strength and weaknesses are focused on internal things while opportunities and threats regard external. As such it’s occasionally labeled as an Internal-External analysis. (An, Teoli, & Sanvictores, 2022) defines strengths as representing a facet of an organization or entity which lends it an advantage over the competition. weaknesses can be understood as similar, but ones that result in disadvantages compared to competitors. Externally the “opportunities” are opportunities outside the entity that can be exploited for benefit of the entity, while “threats” are things that might lead to problems and damages to the entity. (An, Teoli, & Sanvictores, 2022) also brings up issues of concern regarding SWOT analysis, that some critics consider the tool proves to be too superficial and formulaic. Hindering performance as outputs might be misunderstood or misused. By only having a few individuals performing the assessment increases the risk of misinterpretation of the SWOT inputs, which leads to the output results having errors. Furthermore, the SWOT analysis only captures the aspects of a single time-point, while in reality the environment is rapidly evolving which can make the analysis irrelevant by the time it is finished.
+IV. RESULTS
+A. Definitions
+During our interviews a few terms came up repeatedly as key tools for Company’s system maintenance. Two terms that we deemed particularly interesting and that we felt may need some explaining are Azure and Kubernetes
+a) Azure
+Azure is a cloud service built by Microsoft, they have several applications such as virtual machines, databases as well as applications for AI and IoT. Azure provides flexibility and scalability. It is important to note that Azure provides many different services in order to support a company’s digital transformation (Ashman, 2023).
+b) Kubernetes
+Kubernetes is a “container orchestration system” originally created by Google that is now open source. Kubernetes is a system that allows users to define how they want their applications to run and ensure that they stay in the desired state (Hohn, 2019). This allows organizations to keep their applications up and running without much manual labor.
+B. Empirical findings
+During the interview with Company we found out that they were not using any specific framework but had a model of their own which includes best practices from their company and industry standards such as practices from ITIL (change management and service desk*). The reason why they do not fully comply with one or more frameworks is due to the company being smaller in size. Because of this, Company also needs to have people with several system management roles, this could however change as they grow in size. This makes documentation and communication crucial in order for the division of responsibilities to work effectively. Communication about things such as releases is communicated in a structured way in meetings during different part of the process. However due to the same people attending several meetings they might get the same information several times.
+Overall the respondents are happy with the level of expertise about system maintenance in the company. They do also say that they are constantly reviewing and updating the system maintenance processes due to it being ever changing. Furthermore, Company is also providing system maintenance training for the staff and the staff is also requesting more training. They would however want to become more proactive and less reactive when it comes to maintenance of their IT-systems. Another challenge that they mentioned is the transition to new technologies, mainly Kubernetes. System maintenance is viewed as a very important aspect of their service since bad maintenance can impact the service in a destructive way. It is also important that they can maintain their software after it is delivered to the customers. Company has the possibility to monitor the products after it has been delivered in order for them to see if a problem that has occurred is a part of a bigger problem or if it is something locally. Furthermore Company usually sells their software through other companies where it is part of a bundle. In this case it is important that they have clear contracts in place. It’s usually the reseller that chooses the hardware and who is usually responsible for the service when it has reached the customer. 
+Regarding incidents, avoiding data leaks and attacks, Company is aiming to build and maintain a secure environment through architecture and technological solutions to make the application safe but also to avoid parts of the application affect each other. Kubernetes is named as one important part of this but also running code reviews and running closed environments on Linux. In the event of an incident happening, they have an orderly way of reporting the incident, however the way it is reported and handled can depend. 
+In the case of a disaster the Company has a disaster recovery plan and training regarding restoration of the service. Furthermore, they use Azure which they mean have great protection against these types of accidents and would be able to restore the service in 24 hours if everything was lost. 
+C. Analysis
+The points presented in table 2 have been gathered and generalized based on appendix 3 which is summarization of interviews in appendix 1 and 2.
+Strengths
+Weaknesses
+* Expansive documentation.
+* Inhouse ITSM model.
+* Few consultants.
+* SM has high importance in Company.
+* Communication.
+* Testing.
+* Multiple responsibilities.
+* Engagement from staff
+* Security
+* Remote handling
+* Helpdesk/Incident management.
+* Change management.
+* Disaster Recovery.
+* Continuous training
+* Continuous evolving model.
+
+* Multiple responsibilities.
+* Low contact with customers.
+* Time that incident is reported changes how it’s reported and handled
+* The responsibility of who should deal with the incident might differ depending on retailer.
+* Reactive
+
+
+Table 2
+a) Documentation
+Having expansive well written documentation will ensure that information is well-logged and leaves less room for interpretation. Reducing the risk of conflicts occurring when multiple people have the same responsibilities. We can also read about the importance of documentation in the article written by Riggs (Riggs, 1968).
+b) Own Model
+From our interviews we gathered that Company uses their own system maintenance model that it is a mix of ITIL as well as other best practices that people who worked for the company have gathered throughout the years. We see this as a strength because of it being developed based on their own organization’s needs, and we can compare this to what Mendelez, Davila and Pessoa (2015) mentions in their article. 
+c) Contact with customers
+Something that should be regarded as a weakness is the low contact with the customer. This is because it could make it difficult to get feedback about the customers’ wants and needs. 
+d) Changes
+As for when Company makes changes, we think that this should be regarded as a strength as well as they talk about doing tests, keeping a changelog, pilot/beta testing and having a staging environment etcetera. This fits well with the tried and tested method of change management that ITIL (Axelos, 2019) talks about.
+e) Responsibilities
+When it comes to Company’s employes having the same role it puts pressure on having good communication and documentation for this to work (Axelos, 2019). It is a strength that you have multiple people in the same role as this makes sure that if someone leaves the company, this role is still filled, it creates redundancy. However, when it comes to the fact that some people might be at several meetings where the same information is being presented, this ends up being inefficient. Also note that if multiple people have the same role, it can become a weakness if the documentation and communication falters or is done poorly (Axelos, 2019).
+f) Contact with customers
+Having a low number of consultants means that most of the company’s expertise are within the company and not outsourced. These employees tend to stay within the company longer than consultants, which improve work efficiency. Not having many consultants results in heightened security as the people having access to information and systems are mainly your own employees and not outsourced. This is a strength of Company.
+g) Importance
+Another strength of Company is that its employees regards system maintenance as highly important with the reasoning that it’s what makes sure things are working properly and that without it you won’t have working solutions for problems that can occur. 
+h) Timing
+During the interview we found out that the time when the incident gets reported influences how it is being reported as well as how it gets handled. This we regard as a weakness considering that it affects the reliability of the incident management as presented in the work from Axelos (Axelos, 2019).
+i) Communication
+Communication with stakeholders is regarded as an important part of the business. Having continuous communication will make changes easier to implement and helps in solving problems that might pop up during the rollout process.
+j) Testing
+The interviews gave us a good example of how they put value into testing their changes, security etc. They also present a change management that reminds of ITILS change management (Axelos, 2019) and are using a change log in order to keep track of changes and making sure that changes are reversible. This is a big strength.
+k) Incidents
+The responsibility of dealing with incidents with their products are not clearly defined. Should the customer contact the middleman that sold the product or Company that created the software that runs the product. This can lead to problems and confusion for customers and delays on solving the incident (Axelos, 2019).
+l) Evolving Model
+Having a continuously evolving model is a strength considering that it can take in new best practices and keep the model up to date as needed. Furthermore, this leads to continuous improvement as well as training, and as we all know practice makes perfect. What is mentioned in the interview was that Company was too small to adopt any framework fully which fits well with what is mentioned in the previous research on the subject by Melendez, Davila and Pessoa (2015).
+m) Eagerness to learn
+During the interview it was mentioned that Company’s staff is engaged in, and want to learn more about, system maintenance as well as improve their skills within the field. This is a strength as improving your skill and knowledge is key in order to keep the Company working strong. And as mentioned by Melendez, Davila and Pessoa (2015), engagement from staff is key when working with a model in order to be successful. 
+n) Reactiveness
+In the interview it was explained that Company is mainly working reactively to incidents, and they would like to move more towards being proactive. 
+Working reactively is exactly what incident management does according to (Axelos, 2019) as you react to solve incidents that occur. Axelos (2019) also explains what problem management is and how it’s proactively working to solve problems from occurring which can cause incidents. Incident and Problem management work hand in hand as by solving incidents it helps prevent the problem that caused them to occur again, as such putting equal focus on being proactive with problem management as the reactive part of incident management is important.
+o) Disasters
+During the interview it’s mentioned that in case of a disaster that damages or destroys important data, using cloud services company would be able to restore operations within 24h. It’s further mentioned that there are regular trainings on what to do in case of a disaster as well as testing of disaster plans. This falls in line with the continuity management practice, that is responsible for ensuring that services continue to remain available and perform during disasters (Axelos, 2019). Having a good working plan helps mitigate the costly damages a disaster can bring. (Axelos, 2019). 
+
+V. DISCUSSION AND CONCLUSION
+
+A. Own model
+From our interviews we learned that Company didn’t use a preexisting framework and had instead created their own framework. Taking inspiration and best practices from existing frameworks and best practices. This can be seen as a smart thing to do given that the company is of a smaller size, and implementing a large framework such as ITIL would be costly. Furthermore, as we learned during our course frameworks should be seen as more of guidelines to be adopted and fitted to the company’s current situation. As such creating their own framework and adopting best practices from existing frameworks can be considered a smart move for Company.
+B. Best practices
+Overall, we see that Company has a lot of strengths, using best practices of industry standards to implement system management. Having good knowledge about keeping data safe using large amounts and layered security systems, as well as having good documentation to ensure things are done correctly.
+C. Improvements
+As we have found out the company is doing many positive things with their work with ITSM and system maintenance. However, there were a few things that we found that were either not mentioned or we thought could improve. First of these things was that some people with several roles could end up going to meetings where the same information is shared. While not destructive for the process as a whole, it does lead to lower productivity. Furthermore, since the roles were sometimes overlapping they mentioned that documentation and communication was crucial for the division of responsibilities. Just like the previous weakness this is not harmful for the company right now but could become a bigger issue if the company scales up. Another issue that could become worse if they scale up is that they according to the interview is not proactive enough.
+D. Proactive
+A part of ITSM is to make organizations more proactive with system maintenance which means that they are currently lacking with that part. This could also lead to Company not stopping large issues from accruing. This problem could come from both a lack of resources but also a lack of problem management type of processes being put into practice. This in turn leads to more stress on incident handling which takes resources from the productive work being done.
+E. Responsibilities
+A final weakness and possible threat we noticed with Company is that problems could arise regarding responsibility over the system when it has reached the end customer due to Company’s product reaching the end customer through resellers. While positive in the regard that they can reach a wider customer base through other well-established companies and their product, it can be a problem if it’s unclear whether an issue stems from the firmware or the hardware. Another problem is that Company can be affected by other companies’ mistakes through reputation.
+F. Suggestions
+Because of these findings we also believe that, while Company is certainly doing a lot of, if not most things well there still are room for improvement and we will therefore discuss a few suggestions that could be taken based on our findings:
+These suggestions are: 
+* Work towards becoming more proactive in their work with system maintenance in order to in the long run save resources on handling issues that could be avoided as well as being prepared if they scale up. 
+* Improve definition of roles and responsibilities. 
+* Look over and make sure SLAs are clear in regards to responsibility. 
+* Make sure incidents are reported and handled in a streamlined process. 
+G. Criticism of methodology
+Our study will also only be done by two interviews, making the data collection quite limited but once again it is a question about time and resources. We believe however that two interviews will still give us a good idea of how the ITSM works at Company and considering that both people work within the same company have been sent the question approximately a week before hand they have had time to go through the questions and somewhat prepare what to answer. This means that we don’t run as big a risk to run into questions that they cannot answer. 
+We did semi-structured interviews, however, at some points we missed to ask important follow up questions that could have clarified what was meant by the answer. However, it should be noted that while there is always room for improvement, we are happy with the choice of semi-structured interview since we did find some information that we would not have if we did not perform it with that structure. 
+(An, Teoli, & Sanvictores, 2022) criticized SWOT analysis on how the output can be misunderstood, which is a real factor to consider. Depending on the amount of knowledge in the subject a person has the analysis of the output from SWOT can differ. As well as the amount of people doing the analysis, in our report we also only did interviews which limits our insight in how everything at Company works. So our results will be affected by the amount of information we collected during the interviews.
+H. Further Research
+Research where SWOT-analyses are conducted to research a company’s work with system maintenance is still important research to conduct as system maintenance most likely will continue to be an increasingly integral part of IT-organizations daily work. 
+Some suggestions for further research could be to also conduct SWOT-analyses on larger organizations, perhaps to be able to compare what strengths, weaknesses, opportunities, and threats are found in smaller, respectively larger organizations. Such a comparing study could also include organizations within different area of IT. This could lead to suggestions being able to be put in place for a specific form of company which could help companies work with ITSM in the future and perhaps create a new ITSM framework.
+
+I. REFERENCES
+
+An, J., Teoli, D., & Sanvictores, T. (2022). SWOT Analysis. Europe PMC.
+Ashman, A. (2023, august 22). Vad är Microsoft Azure. Retrieved from Asurgent: https://www.asurgent.se/kunskapsbank/vad-ar-microsoft-azure/
+Axelos. (2019). ITIL Foundation ITIL 4 Edition. London: Axelos.
+Edwards, C. (1984). Information Systems Maintenance: An Integrated Perspective. MIS Quarterly, 237-256.
+FitSM. (2019). FitSM. Retrieved from fitsm.eu: https://www.fitsm.eu
+Flynn, M. (2018, November 2). APMG International. Retrieved from apmg-international.com: https://apmg-international.com/article/fit-lightweight-and-lean-fitsm
+Hohn, A. (2019). Getting Started with Kubernetes. Durham, North Carolina, United States.
+Knapp, D. (2010). ITSM Process Design Guide. Fort Lauderdale: J. Ross Publishing Inc.
+Melendez, K., Davila, A., & Pessoa, M. (2015). Information technology service management models applied to medium and small small organizations: A systematic literature review. Elevier.
+Oates, B. J., Griffiths, M., & McLean, R. (2022). Researching Information Systems AND Computing. London: Sage publications Inc.
+Riggs, R. (1968, November). Computer Symtems Maintenance. Nuts and Bolts, pp. 227-232.
+Thejendra, B. (2014). Practical IT Service Management. Ely: IT Governance Publishing.
+
+
+
+
+A. 
+J. APPENDIX
+Appendix 1
+Interview 1 - Respondent A
+Q1: Can you describe what Company is and what you do?
+A: Vi är ett företag som sysslar med digital skyltning. Typ reklamskärmarna på Ica ungefär vad liksom det handlar om att styra skärmar och få ut budskap. Hjälp av effektiv kommunikation. Företag framförallt, men även I retail och butik då. 
+Q2: Do you use any ITSM frameworks or any other type of model in your work with system maintenance?
+A: Vi använder inget speciellt ramverk, Vi har en eget inhouse modell som vi jobbar efter som i sin tur inkopererar då delar från diverse industristandarder framförallt ITIL då, men vi följer inte en specifik.
+Q3: Vet du om det finns någon anledning till varför ni har gjort så? 
+A: Det det största är att vi är ett ganska litet team. Ramverk, ja såna här form av struktur. Det kräver resurser även det liksom så att det måste man anpassa lite helt enkelt efter hur mycket personal man har, enligt också va. 
+Q4: Can you give an example of how you are working with this model in your company?
+A: Ja, det är till exempel vid uppdateringar på mjukvara och så arbetar jag efter strukturerade processer. Vi gör riskutvärderingar, kommunicerar med stake holders och testar och ganska omfattande också i olika miljöer innan vi rullar ut och det gör vi. Då stegvis också, liksom för att kunna upptäcka problem under rollouten också. 
+Q5: Det finns alltså dokument eller något så att säga för varje av de här olika delarna. 
+A: Ja precis. 
+Q6: Have you or your colleagues gotten any sort of training for the framework/s you use?
+A: Jo då vi tränar på dem. Vi läser ju också och håller ju oss också á jour med ITIL och övriga standarder i fall det sker förändringar där man liksom, men självklart som jobbar med det här. Liksom så går vi genom interna träningar och sånt.  Det är mycket team work i sånt, alla måste ju vara med på båten och jobba på samma sätt liksom så. Det är viktigt. 
+Q7: Do you have any assigned roles for the people working on your system maintenance?
+A: Vi har roller, men det som jag nämnde så är det ju ett ganska litet team och liksom så att det betyder att de här rollerna är fördelade… Flera roller är fördelade på flera personer var liksom. Vi måste sprida ut det helt enkelt. Vi får också inte hänga upp det på enskilda personer och så också som redundans. 
+
+Q8: How would you describe the level of expertise when it comes to system maintenance within your company?  
+A: Vi har ganska hög kompetens internt. Många tar ju in konsulter, men vi har det mesta inne och så. En lång erfarenhet också, framförallt.
+Q9: Ni tar alltså inte in konsulter. 
+A: Relativt lite. Vi har ju konsulter, men det är fasta konsulter som jobbar med kontinuerligt. Det är då mer ja spetskompetens och så.  
+Q10: Are you happy about the current expertise level or would you (the company) want to expand your expertise in the future?
+A: Nej, men vi är ganska nöjda, Vi är stolta över de kunskaper vi har. Det är ju ett kontinuerligt arbete med ITIL. Det utvecklas konstant och det går ju inte att stanna. Det kommer hela tiden att göra så liksom så man måste ju konstant anpassa och uppdatera. 
+Q11: Can employees have multiple responsibilities or are people mainly working with one maintenance process?
+A: Ja precis ja och det är ju så. Det kan vara att vissa grejer är väldigt specifika. Det är Inte jättelätt att slänga sig in i ett kubernetes kluster. Man arrangerar terraform och helmskript och sånt där så att det är vissa med spetskompetens, även om många kan mycket om mycket så finns det de här spetsarna som måste tillföras i och med att det är så pass komplext. Vissa delar så att där behöver vissa ha mer kunskaper också. 
+Q12: How does this affect communication within Company?
+A: Jo när man delar rollen så blir det ju väldigt viktigt att man har en tydlig kommunikation så att man ändå har tydlig ansvarsfördelning och så. Vi har regelbundna avstämningar och stämmer av dagligen, egentligen kring vad vi jobbar med. Plus omfattande dokumentation och sånt också så att vi gör rätt. Men det gäller att hålla ordning på grejerna helt enkelt
+Q13: Du nämnde ju lite att ni använder delar från ITIL. Är det någon speciell del som du vet ni använder därifrån? 
+A: Det är generellt alla drag som change management till exempel och dem processerna. Vi gör ju även beröringar, vi har ju kundsupport också så där jobbar man också lite efter det här.
+Q14: Och då frågade vi lite också nyss, men: why have you chosen this way, chosen to work this way with your system maintenance? you said you were a small company. 
+A: Ja precis och det är ju det. Att det ska gå och jobba effektivt för oss i och med att vi är ett så pass litet team, och få vara så anpassningsbar som möjligt liksom. Vi får tydligare ansvarsområde, men också minimerar överlappning och så har det som det är egentligen för att maximera produktivitet, liksom så att ja. Vi är inte så många att vi kan liksom syssla enbart med drift, utan vi måste också även utveckla produkterna som ligger på samma team.
+Q15: Nu har vi sagt flera gånger att ni är ett litet företag. För vad är det för storlek på Company? 
+A: Ja i huvudteamet här är vi väl 4 utvecklare. Att tävla som så här är rena utvecklare var det som och sen har vi ett externt team. Som är väl dubbelt så stort, så var liksom. Men baserade i Ukraina. Men det är ju vi ändå som sköter utvecklingen av produkten och kan vi nog ansar också för att fördriften av. 
+Q16: If you could improve anything about the way Company works with system maintenance, what would that be?
+A: Ja, vi skulle väl vilja kunna vara mera proaktiva än reaktiva och. Vi vill utöka liksom övervakningen och så. Och snabbare kunna upptäcka avvikelser och hantera de var liksom. Det är någonting vi jobbar med aktivt, men ja, det är inte helt enkelt. 
+Q17: Nej, det förstår jag. Vet du hur ni jobbar med det här då eller utan att gå in på? Utan att gå in på för mycket detaljer liksom.
+A: Jag vet, men det blir ju omfattande loggningar och så liksom det. Vi kör ju på Azure plattformen. Vi använder application-insights. Vi använder docker grafana, vi loggar liksom en hel del så va. Sen gäller ju att analysera och förstår. Loggar och det är också, men tittar ju också i all möjligt som man analyserar sig egentligen vad liksom? Men man får titta åt prestandaskalning och sånt där som ser att det är. Det finns tillräckliga marginaler och allting. Konstant jobb ja. 
+Q18: In your opinion, do you see system maintenance as an important part of the work being done at Company?
+A: Absolut. Det är ett absolut måste det annars så fungerar inte grejerna liksom. Vi har alltid någonting som går snett så som måste upptäckas, va, liksom. Det är det kan vara en lagringsyta som börjar bli full eller vad som helst va liksom. Det är helt kritiskt att man sköter om det för att annars så har du bara en varken en fungerande eller säker lösning.
+Q19: What safety precautions do you have implemented to help prevent IT incidents, data leaks and attacks from occurring?
+A: Lager på lager. Så att det kallas, det blir ju mycket. Det är ju mycket IDP, det är kryptering, det är brandväggar, det är proxys och. Och om man pratar tekniska lösningar men också då. Ja, strukturerat arbete med penetrationstester och går igenom och se över. Det är code reviews. Det är automatiska code reviews och skannar efter så operativa så det. Det finns hur mycket som helst att göra egentligen här och det tar aldrig slut. 
+Q20: Nej, nej, men och så säkerhet är ändå något som ni alltså fokuserar?
+A: Absolut säkerhet där är ett fokus som råder verkligen så bara så det är jätteviktigt. 
+
+Q21: How do you ensure that the suppliers that you’re working with fulfills their end of the contracts you have with them?  
+A: Det gäller att man har kommunikation med dem, bedömare och stämmer av regelbundet, ser över villkor och liksom att det är följs det som är överenskommet var liksom. Nu jobbar vi med stora leverantörer. Det är Microsoft till exempel och det är särskilda datacenter och de har ju väldigt omfattande dokumentation och rutiner. Men själva där man liksom både vad det gäller fysisk säkerhet och moln säkerhet så att säga liksom. Det är ju väldigt väldokumenterat på de punkterna när man när man jobbar med de mest våra bara. 
+Q22: Så att det är inga mindre företag som ni arbetar med.
+A: Nej, det är det inte. Är det är mindre företag då är det liksom möjligen, väldigt specifik tjänst och det blir ju därmed också lätt att kontrollera vad. 
+Q23: How do you make sure that your screens are working as intended when they are at a customer’s location? How do you maintain them at that point?
+A: Skärmarna kommer ju generellt med diverse övervakningsfunktionalitet och så och det är den vi använder, och det är beroende på tillverkarnas API er. Det är kvalitet som. Vi kan normalt sett övervaka och diagnostisera med realtid. De ligger realtids uppkopplade hela tiden. Behövs det underhåll på dem så då är det ju våra partners som kliver in där då, känt dem som faktiskt säljer skärmarna till dem så bara. För att vi gör ju egentligen mjukvaran bara som styr dem. Men ja, annars sköter kunderna dem själva liksom. Men just den tekniska funktionen, den övervakar vi kontinuerligt då från plattformen då.
+Q24: Det var någonting jag tänkte fråga där, men jag minns inte riktigt vad det var nu jag tappade det. Och du svara att ni? Säg det första du sa i svaret bara ska vi se om jag kan komma på det. 
+A: Jo alltså vi använder det beror på tillverkarnas API er liksom vad man kan göra, vad man vi har ju med ansökan. Vi har övervakande realtid, kontinuerliga. 
+Q25: Ja, det var om den där övervakningen var det precis. Är det någonting som? Vilka är det som gör det? Är det alla som övervakar eller är det någon speciell avdelning som sköter det? 
+A: Nej, de övervakas ju i produkten sen som sådan. Det är ju vi, det är tiotusentals skärmar. Vi gör egentligen ingenting så att säga om vi ser att en liksom avviker från beteendet utan det är ju upp till kunden i det där läget egentligen att säga att de behöver hjälp eller inte liksom. Om man inte har avtalat något specifikt att ni ska hålla koll på just den där så att ja. Vi övervakar dem väl för vår del egentligen mest för att upptäcka avvikelser. Om vi ser liksom att det börjar se svart ut i norra Sverige typ alltså kan det ju bero på ett centralt fel snarare än att en enskild skärm har liksom, en skärm hit eller dit, ja men det är lokala nätverk, det är många delar i det vi inte har kontroll över egentligen va. Det kan vara städaren som ryckt ur sladden eller vad som helst. Men för vår direkt så ser vi ju då liksom ”ja, men nu börjar det försvinna lite väl mycket skärmar här liksom, är det någonting som avviker från det normala liksom?” och då flaggar vi liksom och följer upp liksom att kontrollera dem så att allting verkar funka som det ska och så vidare va. 
+Q26: How do you handle incoming questions about your products and incident reports and so on from users and suppliers as well. 
+A: Supportteamet har ju helpdesksystem och så som hanterar det via tickets då. Det tas ju emot både på mejl och telefon, då va. Och de följer då som en strukturerad incidenthanteringsprocess. Bedömer, prioriterar och så va liksom och de kan också eskalera till oss då på mjukvaruteamet. Det de tycker att det behövs. 
+Q27: Fungerar det med ITIL? Där finns ju det här. Vad heter det? 
+A: Supportdesk
+Q28: Ja supportdesk. Är det någonting som ni har hämtat därifrån också hur ni arbetar med det? 
+A: Ja processen i huvudsak så liksom men det är ju incidenthanteringen. 
+Q29:  Nya, alltså om det om det är någon som är intresserad av att skaffa en skärm hos er då är det samma team som gör det, eller hur går ni till väga? 
+A: Vi säljer ju via återförsäljare, så vi har ju säljare som coachar dem lite och hjälper dem liksom så va. Men i huvudsak är det ju återförsäljaren som säljer in grejerna på så sätt va. Så för vår del handlar det egentligen om att leverera när affären är klar snarare då va liksom. Om det är en ny kund att dem vårdar dem, ser till att de får tillgång till systemet och får igång skärmen och så vidare. Men återförsäljaren där då är en viktig del i det maskineriet ändå liksom att leverera skärmen och hjälpa igång lite va så att. 
+Q30: Så blir återförsäljarna då som har mest direktkontakt med kunden?
+A: Ja initialt absolut men sedan vart de är då när det väl är driftat då eller använder det liksom och om det är något problem, ja det varierar nog lite beroende på återförsäljaren och så liksom, typen av återförsäljare kanske också. Finns ju de som man ser så att säga flyttar kartongen bara och så finns det de som adderar värde, finns väl inget ord egentligen på svenska för det men, VAR brukar det heta i utlandet, Value-Added Reseller, att de faktiskt adderar värde till kedjan. Och där är ju alla olika va, det är en del som bara vill sälja grejerna och sen ”hej då” och en del vill ja hjälpa hela vägen, så att, det varierar ganska kraftigt beroende på vem som sitter emellan där va. Men då kommer det mesta ändå in liksom till supporten i så va om liksom det är några frågeställningar och så va. 
+Q31: De här återförsäljarna. Finns det någon säkerhetsrisk där eller de bara säljer skärmarna och levererar dem? 
+A: De säljer skärmarna och levererar dem. I det fallet de hjälper kunden på annat vis så kan ju kunden möjligen liksom släppa in dem i deras miljö så att säga för att kunna hjälpa till va, men de har ju ingen access utöver det kunden ger dem i det läget, va. 
+Q32: How do you manage changes and updates, new releases to the Systems both out at the customers location and at your company? 
+A: Det rullas ut stegvis och om vi pratar molntjänster då så dels kör vi en testmiljö först och sen har vi en staging-miljö som man testar för varje steg helt enkelt för att upptäcka eventuella problem och fel då och sen beroende på hur stor funktion det är och så kan vi också släppa ut den på beta test till utvalda kunder innan vi till slut då rullar ut en fullständig release och då tillsammans med uppdaterad dokumentation och information och så också även före releasen beroende på hur stor den är och om den ändrar saker och så vidare, va.
+Q33: Ni kan uppdatera skärmarna ifrån ert kontor eller alltså ja, skicka ut uppdateringar? 
+A: Ja skärmarna i sig uppdaterar automatiskt i princip så va. Så de ser att det finns en uppdaterad version och då uppdaterar dem alltså. Med vissa undantag, så laddar de i princip ner ett spelarpaket automatiskt. 
+Q34: Är det något som görs i bakgrunden eller kan det bli så att en skärm uppdateras hos kunden? Och så släcks den ner under tiden som den uppdateras, eller hur fungerar det? 
+A: Det sker vid uppstart av skärmen normalt sett och det tar sekunder. På ett sätt så att det blir inte ett av brott under körning, utan det är när den ändå startade om alltså tar det några sekunder extra, för att uppdatera. Är ju egentligen bara en app i princip som den kör den. Sen har du ju den fasta mjukvaran i skärmen där firmware som man kan trycka ut också. Men det är ju en större operation eller som. Vi har möjlighet att trycka ut sådana också så att säga, men det är ju tillverkarens programvara då som vi möjliggör att uppdatera i skärmen från vår plattform direkt. Om det är buggar där så att säga. Ja, är du utanför vår kontroll att laga så att jag men det finns en uppdaterad version som lagar är så kan vi se till att den distribueras. 
+Q35: Men så om kunden inte aldrig stänger av sin skärm och starta på den igen så kommer inte uppdateringen att komma?
+A: Jo då, då startar vi om den.
+Q36: Ah då startar ni om den, okej.
+A: Nej, men generellt sett så har man en schemalagd omstart. Det kan vara i natt eller kan man en gång i veckan ska vara liksom? Så det finns alltid ett fönstertillgängligt va liksom, och då finns det inget fönster så kan man alltid liksom skjuta ut ett va. 
+Q37: In the event of disaster occurring such as a Large power outing or floodings how do you ensure that your organisation can get back to working as usual. 
+A: Vi har ju dokumenterat katastrofhanteringsplanerna och så liksom och backuper på som är utspridda geografiskt och så va liksom. Och även en handlingsplan då för snabb återställning. Vi har väl i princip så att vi kan ja från totalförlust ska vi kunna återställa allting, inom ett dygn. Det är ju ett extremfall, att man skulle tappa allt liksom. 
+Q38: Ja, det händer ju inte så ofta, men det är ju.
+A: Nej.
+Q39: Man behöver ju ha det för worst case scenario ifall det händer. 
+A: Precis precis och vi kör övning på det också. Tillochfrån va liksom. Det är lite spännande när man tappar ett helt kuberneteskluster. Också ska man få igång det igen så att. Det är viktigt med de här övningarna liksom för att man upptäcker alltid någon liten avvikelse i och med att det förändras så kontinuerligt också. Man måste uppdatera dokumentationen så att det är alltid ett levande dokument så va för att. Teknikutvecklingen är så snabb just med med kluster och sånt Här va liksom att man uppdaterar den konstant slutar man då är man efter och det gör ju också att det förändras kontinuerligt också, så det är viktigt att göra de här testerna. 
+Q40: Hur ser det ut med liksom kostnad? Är det en stor kostnad att ni förbereder er för sånt här eller är det någonting? 
+A: Nej, det är väl ingen jättekostnad i sig, liksom att att vara förberedd för det va liksom. Det är klart det kostar att drifta allting med. Så var det liksom, men beredskapen som sådan, det handlar om dokumentation och så va egentligen i stor utsträckning, lite lagring förstås, backup och dylikt va liksom, men det mesta är ju genererat, så va liksom det det. Det är infrastruktures kod va liksom så att vi genererar ju upp infrastrukturen på kod så att i en optimal värld så är den knapptryckningen så får du vänta ett tag men, så ska ju den egentligen generera upp hela infrastrukturen igen utifrån kod va liksom. Så det är klart att det är en kostnad, det kräver tid och kunskap för att bygga upp den delen men själva infrastrukturen som sådan blir ju istället då enklare att handla, liksom för att det är inte manuellt där liksom. Så man förflyttar ju egentligen investeringen till att ha en väldigt rigorös dokumentation i form av kod som är tillräckligt bra för att skapa upp infrastrukturen istället för att som förr att man skapa upp ett VM där skapa ett VM där koppla ihop de här. Enormt mycket manuellt arbete som låg där istället för liksom som nu är det komplexare förvisso, men betydligt mer strukturerat. 
+Q41: Ja, how do you ensure scalability in your system management? 
+A: Vi övervakar ju allting då kontinuerligt, och det gäller egentligen allting från det som det tekniska belastningar till kostnader och allting, så va och det finns VM kvar, absolut, det är ju kluster och så är det ju relativt nytt ändå även om teknikutvecklingen är enorma, så det är lite ja, hybridlösning då än så länge för att vi har en del legacy VM kvar. I det fallet använder vi lastbalanserare bland annat och vi har Provisioneringsprocess för att kunna skala nödvändigt på de delarna också va? Men annars så är det ju kubernets då k8tes som vi använder i och med att du får ju skalbarhet och självreparation och automation och allting på köpet där i väldigt större utsträckning, va? Så vi skalar ju liksom både horisont och vertikalt och. Där så att vi kan egentligen i princip skruva på ratten och skala på. Det är lite mer att jobba än så, men det det liknelsen är är ganska nära. 
+Q42: In what areas do you think your organisation could improve with your system maintenance. I think we talked about it earlier but any other ways? 
+A: Ja, vi är trygga med det som vi har va, men det finns ju alltid rum för förbättring som jag sa. Vi Kan alltid förbättra dokumentationen ytterligare, va liksom tydligare instruktioner och sånt va liksom för att göra det ännu mer robust. Så det är mycket här på live dokumentation va liksom. Alla personer är olika också, liksom så det tydlighet det är jätteviktigt att man inte lämnar tolkningsutrymme i visa fall då va när man har tolkningsutrymme ja då kan det bli lite hur som. Ja men ännu mer dokument, liksom framför allt va liksom.
+Q43: Is there anything else you would like to add that we forgot to ask about?
+A. Det tror jag väl inte.  Det var ganska många frågor ändå så. 
+Notering efter detta blev diskussionen generellt angående förtydligande om termer som använt för att vi i gruppen skulle få en bättre förståelse för det som diskuterats under intervjun, då detta inte innefattas i swot analysis kommer detta inte tas med här. 
+Appendix 2
+Interview 2 - Respondent B
+Q1: Can you briefly describe what Company is and what you do?
+A: Yes Company är ett företag som utvecklar programvara för digitalsigners. Vi utvecklar den själva och vi säljer också i kanalen, det vill säga via distributörer och återförsäljare. Det är kortfattat vad vi gör.
+Q2: Är det både mjukvaran och skärmarna som ni säljer eller främst mjukvaran.
+Vi utvecklar bara mjukvaran. Sen har vi hårdvarupartners till exempel, Samsung, gelipson och så vidare. Vi säljer vidare en del hårdvara. Vi har en del partner som vi säljer vidare hårdvara från, men det är inte vårat fokus, utan oftast är det bundningar som sker på disknivån eller på återsäljarenivån att de sätter ihop ett paket med våra mjukvara och en hårdvara, det vill säga en skärm som fungerar bra med Company
+Q3: Do you use any ITSM frameworks or any other type of model in your work with system maintenance?
+A: Vi använder inget sådant framework idag som är så strukturerat utan vi har en egenutvecklad modell då som vi jobbar utifrån.
+Q4: Är det någon som ni har skapat själva eller har ni lånat in från lite olika best practises och sånt?
+A: Det är lite best practices tror jag från folk som har jobbat på Company och jobbar här nu och så.  En del kommer ju från större organisationer och sånt, men vi har inte känt oss så att vi är så stora nog att vi vill ta in ett sånt stort ramverken till Company än. Framöver kanske, men inte i dag än.
+Q5: Can you give an example of how you are working with this model in your company?
+A: Ja om vi kollar vilket område det gäller om vi tar till exempel uppdateringar så har vi ju rutiner för hur vi gör uppdateringar av våra molntjänster. Vi kan hamna i programvaran både från molntjänst och som en on premise lösning, men måltjänsten så har vi ju strukturerade. Rutiner för hur vi testar funktioner först, hur vi Schemalägger när det ska ut och även hur vi kommunicerar allt det här.
+Q6: Have you or your colleagues gotten any sort of training for the framework/s you use?
+A: Vi har ju interna såna här sektioner med dem som det berörde. Ja, så vi har ju olika roller, vilka de som har rollerna som kommer jobba med det här. De har ju fått träning på det.
+Q7: Det har vi är det fortlöpande träning eller är det liksom en träning och sen så är ni nöjda?
+Vi utvecklar ju också de här ramverken hela tiden, hur vi till exempel underhållningssystemen, hur vi uppdaterar dem och sånt så att det behövs vårt löpande träningen där utifrån det så att det är inte statiska.
+Q8: Do you have any assigned roles for the people working on your system maintenance?
+A: Ja i Company har vi ju olika roller, till exempel vilka som jobbar med support, helpdesk och så vi har personer som är utvecklare inom utveckling är det olika roller också. Sen har vi ju de som hanterar också systemet, driften och så inom systemdrift. I princip 2 roller då några som hanterar jour ansvarar för att systemet är igång och så sen några som hanterar att det ska uppdateras. När det ska köras ut nya uppdateringar. Och vi är ju inte så stora så att en del har ju flera roller också har ingen dedikerad person för bara drift till exempel.
+Q9: How would you describe the level of expertise when it comes to system maintenance within your company?  
+A: Ja, men vi har ganska hög sån nivå. Vi har haft det som ett fokus i rekrytering också. Att få in en typ av personer och även att träna upp och se till så att de flesta har bra koll på det här. Det är ett viktigt område för oss.
+Q10: Är det ju samma typ av träning som du nämnde här för en liten stund sen, eller är det här någon annan typ av träning?
+A: Nej, det är den typen av träning som vi ser till så att de vet hur uppdateringen ska gå till och även hur våran disaster recovery plan fungerar och så vidare, alla de delarna.
+Q11: Are you happy about the current expertise level or would you (the company) want to expand your expertise in the future?
+A: Man vill ju alltid förbättra, jag tycker att vi har en bra nivå. Min uppfattning, men vi vill ju såklart alltid förbättra och jag vet att det finns ett önskemål inom företaget att de som jobbar med att också vilja förbättra och lära sig mer.
+Q12: Is there any expertise that you feel are currently lacking?
+A: Inte på det sätt att det att det idag begränsar oss. Men vi är ju. Vi håller ju på och gör stora förändringar i våran Cloud arkitektur, vilket kommer kräva mer kunskaper framöver. Vi flyttar mer och mer in i Cubenetes våra tjänster och så och det förändrar ju mycket i hanteringen runt omkring också. Vi har en bra kunskap på det nu. Vi kör redan där i det nu, det kommer troligen kräva ytterligare kunskap framöver.
+Q13: Can employees have multiple responsibilities or are people mainly working with one maintenance process? How does this affect communication within Company?
+A: Vi har ju strukturerat sätt hur vi kommunicerar till exempel när det ska göras en uppdatering internt i bolaget vart vi lägger ut att nu har det skett en uppdatering, vad innehåller den? Vi har också strukturerat hur vi pratar med release teamet om ja, vilken uppdatering som ska komma framöver. Det kan ju vara att vissa personer är med på flera olika dom här mötena, olika delar i processen, men då är det så dom kommer kanske få repeterad information ibland, men vi behöver ha en process oavsett vilka det är med i grupperna så behöver vi ha den processen där. Och det kan ju vara att när vi skalar upp mer att. Troligen kommer personer få färre roller och det kommer vara mer individuella personer på de här rollerna framöver. Men vi försöker ha samma process nu som vi kommer ha framöver då.
+Q14: Precis har ni något sätt som ni eller på någon plats där ni ska dokumentera all den här kommunikationen eller sker det bara mer på möten muntligt?
+A: Vi dokumenterar ju först och allt rollmappen och det handlar om vart du är på väg, vad vill du göra för ändringar? Och sen har vi löpande kommunikation om hur systemförändringarna byggs. Det dokumenteras både hur vi löser det tekniskt också hur det ska fungera för kunden. Vi vill också dokumentera hur det ska driftas framöver som en del bland annat av disaster recover planen. Så att när vi gör en förändring i till exempel Cloud så blir det ju dokumenterat. Vår infrastruktur är uppsatt utifrån kod och inte utifrån att man manuellt gör det utan allting är ifrån kod så att allting går att script upp igen och så att det är ett sätt också som vi dokumenterar den här typen av förändringar att. Vi kanske har en ut en utvecklare som tar fram en förändring för infrastrukturen. Då skriver den koden och sen kommer vi kunna kolla på den här script förändringen och se ja, men det är det här som görs och sen är det någon som godkänner den förändringen så trivs den igenom där så det är dokumenterat på det sättet. Inga godtyckliga förändringar utan det mesta går ju via hjärnprocesser. När det gäller releasehantering och diskussioner dokumenterat ofta i powerpoint eller liknande. Och dom typer av mötena. Ibland kan det vara också att det spelas in som vi gör nu.
+Q15: Nu vi pratar lite grann om det här, men jag tycker att ställer den frågan ändå, why have your company chosen the way to work with maintenance that you have? som den här modellen och ansvarsområdena.
+A: Det är ju utifrån den tekniken som vi har och vad vi upplever fungerat bäst. Vi har ju hållt på med det ganska länge nu. Company har funnits i 25 år. Många av oss har jobbat i. 5, 10, 15 år, upp till 15 år här. Så vi har ju byggt den erfarenheten om vad som är bäst inom våra branscher. Sen har vi ju gått över till nya teknik, sådant påverkar ju också.
+Q16: Så här det här, det här sättet ni arbetar på med system maintenance är det någonting som ni utvärderar på något sätt emellanåt och uppdaterar hur ni arbetar med det?
+A: Ja vi har 1 2 personer som brukar skanna av och ja ha som lite uppdrag att ha koll på området. Vad som görs förändringar där, vilken bäst faktiskt är det som gäller nu och sånt, och sen ta in det i företaget och diskutera med oss om vi ska införa nya förändringar inte. Inom Cloud architecture och så vidare.
+Q17: If you could improve anything about the way Company works with system maintenance, what would it be?
+A: Jag tror det har att göra med hur vi går över till kubernetes mycket i framtiden och hur vi kan gå över till mer CICD approach och fler delar här. Vi är inte riktigt där än av flera anledningar, vi har legacy kod, vi har legacy arkitektur och så vidare, och när vi. Gör de förändringar så kommer vi också ge förändringar på även de här delarna för att då bli andra processer tillgängliga för oss.
+Q18: Ska du jag tänkte skulle du kunna bara beskriva lite kort? Det här för du nämnde det här med övergången till kubernetes. Hur ungefär vad det är lite kort och hur det är att det ska påverka era företag.
+A: Yes, så vi har driftat tidigare våra molntjänst. Det är att vi har driftat den på virtuella maskiner som man har konfigurerat upp. Det har vi haft ja, men dokumenterat vilka förändringar vi har på den virtuella maskiner. Men det var ju ett manuellt man går in på virtuella maskiner man genomför förändringen, en person, man skriver en change-log på vad som förändrar sig så man vet. Statusen på den och sen körs Company på den, Company installeras på den, konfigureras upp när vi går över till kubenetes så blir det istället att det blir helt uppskriptat allting både virtuella maskinerna, hur de kommunicerar hela kommunikationen runt omkring, hur applikationen körs i den. Allting ingenting görs längre manuellt, vilket betyder att du kan ta bort hela miljön, och sen kan du skrift upp den på nytt. Helt utan att du manuellt går in i ditt och gör det. Man har också en fullständig change-log, exakt från alla deployments på vilka förändringar som gjorts i miljön. Så om man ser att det har blivit stabilitetsproblem, ja, men då kan man gå bakåt i tiden och se vilka förändringar har vi gjort på infrastrukturen då. Har de påverkat det och så vidare.
+Q19: In your opinion, do you see system maintenance as an important part of the working being done at company?
+A: Ja, det är det. Speciellt eftersom vi driftar ju en miljö för våra kunder. Det är ju ungefär femtontusen skärmar på en av systemen vi kör. Sen har vi flera system, den största den är femtontusen skärmar som är uppkopplade hela tiden realtill mot den. Så störningar och problem, där kommer ju direkt påverka det kanske en infartsskärm till exempel borgerliga kommun skulle sluta fungera där. Det skärmar i en butik eller Clas Ohlson och så. Så att. Vi märks direkt om det skulle bli problem där, så därför är det här en väldigt viktig del för att vi ska kunna leverera en hög kvalitet till våra kunder och även säkerhet också då, man vill inte att. fel personer ska komma in och komma åt dom här ytorna och lägga ut olämpligt innehållande så.
+Q20: Det har ni något? Vad ska vi säga beställt hur ni ska arbeta med såna här olika incidenter och så?
+A: Ja vi har en rutin för incident rapportering och sånt först hur vi får in det. Hur vi kategoriserar. Det är allvarligt eller inte? Det kan ju vara att en incident för en skärm ett problem kanske går till eller en större satte utifrån hur många som påverkas på vilket sätt och så. Så har ju olika vägar går sen. Även också tider på dygnet, kan påverka hur incidenter rapporteras och hanteras. Sen har vi rutiner på, ja, men hur det löses hur det kommuniceras att det varit en incident. För strukturerade dokument som fylls i och delas med de berörda partner och hur det sen följs upp efteråt.
+Q21: Har ni några särskilda personer som är ansvariga för att arbeta med incidenter på Company eller är det lite att alla får?
+A: Nej, det är särskilda personer med särskilt kanal det tar.
+Q22: Är det någon form av typ service desk ni har?
+A: Vi har en servicedesk som är firstline för det ja, tar det i första hand. Sen är det lite annorlunda på olika regioner. Vi är ju inte bara i Sverige i Norden, utan vi finns i övriga delar av världen, till exempel i Australien. Så att. Vilket är en helt annan tidszon så att det är lite olika i olika länder. Men i princip så.
+Q23: Vi har kopplat till det också då. What safety precautions do you have implemented to help prevent IT incidents, data leaks and attacks from occurring?
+A: Det här är ju ett område som vi fokuserar på och jobbar mycket inom. Vi har experter i företaget som jobbar mycket på det här. Vi har ju rutin även också i företaget som innefattar till exempel peer reviews utifrån säkerhet. Vi automatisk kodgranskning också utifrån säkerhet och paket och så vidare. Så det är ett viktigt område här. När det gäller infrastrukturen i sig så har vi också den byggd utifrån säkerhet, speciellt kubernetes-miljön, hur den är uppbyggd med isolerade noder och containers och så vidare så att de inte ska kunna påverka varandra. Kommer de åt någonting ska de inte komma åt resten och så vidare. Vi ser till så att lösenord och liknande är väldigt svåra att gissa då vi i princip genererar de också i systemen. Det är ingen person som ens vet om de här så att det sätts upp och konfigurerar sig automatiskt I de här miljöerna. Vi kör ju ofta, i alla fall nya miljöer vi lägger upp, de körs ju på Linux också för just säkerheten. I väldigt nerlåsta miljöer, Linux, det blir svårare då att ta sig in på dem.
+Q24: How do you ensure that the suppliers that you are working with fulfils their part of the contracts you have with them?
+A: Ja vi har ju ett antal suppliers både inom utveckling och drift och även andra områden. Så det är ju också viktigt om vi ska kunna leverera något bra så att de gör det. Så det är något vi har en dialog med kontinuerligt. Vi har även tydliga kontrakt med dem också så att det ska bli korrekt där. End Supplier kan man säga är ju de som driftar vår miljö då det är ju Azure vi kör i. Då är det ju Microsoft som är en supplier och vi ser ju över vad de committar sig till och så, det är en viktig del av det. Både inom tillgänglighet på tjänsterna SLA.er och sånt, men också utifrån privacy GDPR. Det har ju varit lite grejer där med på privacy shield och sånt förr.
+Q25: How does your company make sure that your screens are working as intended when they are at a customer location?
+A: Vi säljer ju våran programvara tillsammans med återförsäljare. Så att ofta har vi ett delat ansvar där ofta det är återsäljaren som är den som levererar hårdvaran, har valt hårdvaran och installerar den där så de brukar ta slutansvaret för att skärmen är installerad korrekt på plats och att den rullar där. En del företag har också en IT-avdelning som kan vara ansvarig för all IT på det bolaget då och då ansvar också för driften av skärmar, att skärmarna är igång. Så det är lite olika, ibland är det IT avdelningen, ibland är det ÅFS som har ett större ansvar där och de hör sen av sig till oss om det är problem. Vi har ju också sen en kontinuerlig mätning och så, så att vi kan från vårat håll se hur skärmarna kör och mår och om de funkar som de ska så ibland gör vi också proaktiva åtgärder att vi via våran helpdesk kan kontakta kunder om vi ser från vårat håll att det är problem här på ett antal skärmar på miljön. Så utifrån möjligheterna som de har så kommer de kontakta dem.
+Q26: Så jag tänker finns det någon form av kontrakt eller så som säger också vart erat ansvar börjar och tar slut med det här när skärmarna kommer ut till kunderna?
+A: Ja det finns många kontrakt där ja. Jag tror det är i EULA.n just nu, bland annat och även i produktdefinitionen, tror jag.
+Q27: How do you handle incoming questions about your products and incident reports from users and suppliers?
+A: Ja, först allt har vi ju våran supportavdelning som de kan ringa till eller mejla. Så oftast är det ju dit det kommer. Ibland kan det också komma via återförsäljaren. Antingen till inte support eller kanske till via säljarna in till oss. Men rutinen är att de ofta ska försöka gå via support även vilken kanal den tar så ska den gå via våran support som bedömer: vad är det för något, är det så att man har gjort fel, har man kanske fel kunskap om Företaget, de kanske behöver utbildning eller så, är det ett viktigt problem, är det hårdvaran som har ett problem så kanske de behöver rapportera det till återförsäljning eller hårdvarutillverkaren och så vidare. Är det så att det är en incident/ett problem med Företaget, då tar dem det vidare till utvecklingsavdelningen så kommer vi bedöma vad som behöver göras och så där.
+Q28: Okej så det servicedesken som ansvarar för att den här för frågorna någonting som komma till rätt ställe sedan.
+A: Ja just det, incidenter och så och problem.
+Q29: How do you manage changes, updates and new releases to your Systems at Company?
+A: Ja den har vi kommit in på lite innan. Vi har ju error-map hur vi planerar det. Sen har vi. Rutiner för hur vi jobbar med det efteråt och vi har ett releaseteam. Ett Team som jobbar med release management på hela bolaget så att hela bolaget ska vara synkat support, sälj, marknad och så vidare. Och sen har vi ett release-planing team som är tekniskt som också ser till så att vi tekniskt är redo för att vi har ja. För att det är kodat och testat till att det finns infrastruktur på gång på plats, att det finns ett innehav och så vidare och att se till att det blir rätt tid för uppdateringar så vi har rutiner med olika team, och olika möten som sker kontinuerligt under hela året.
+Q30: Jag förstår, är det folk som då sitter på samma kontor ni eller är det några som är arrangerade för alla eller om du förstår vad jag menar.
+A: Vad menar du för alla där?
+Q31: Ja, så är det de där som arbetar med releases är de folk som jobbar just hos er eller är de på andra platser, utspridda.
+A: Det är det är lite mixat. Vi har ju ett kontor här i Borlänge, men de flesta på Company jobbar ju utanför det här kontoret. Och det är på alla avdelningar, det är på produkt, det är på sälj, det på marknad och så vidare. Enda avdelningen som jag tror är fullständigt här men kanske jobbar mycket en hel del remote, det är support, men alla andra är ju distribuerade team så att vi har inte fysisk lokation som ett krav för vilket team man är mer med i eller vilket ansvar man har. Det är egentligen utifrån rollen man har.
+Q32: In the event of disaster occurring such as a power outage or flooding how du ensure that your organization can get back to keep working as usual.
+A: Ja, man kan väl kolla på 2 delar här. Ett är ju våran tjänst och vi tar handhåller kunderna hur den ska hanteras och den andra kanske hur vi hanterar våra interna system då för vårat interna arbete.  Vårt interna system är ju svårt som jag sa att i och med att vi inte att vi är distruberade, det är ju. Vi har många kontor om man skulle räkna med alla personer i alla Länder och så. Där har vi sagt att dom som jobbar utanför byggnaden här de har ofta ett mycket större ansvar för att själva hantera det här i sin miljön. De flesta tror jag har flexibla arbetsplatser som kan ta och ja fysiskt förflytta sig om det skulle vara så. När det gäller våran molntjänst så kör ju den i Azure som har väldigt bra skydd för det här. Är det så att ett helt datacenter skulle gå under totalt och förstöras. Och dom inte kan hjälpa oss, azure att flytta det här, men då har ju vi våran disaster recovery plan så jag kan använda för att med skrift skapa upp hela miljön och det är något vi också har testat det fungerar.
+Q33: Okej är det någonting ni återkommande träna på också utför?
+A: vi gör väl det, Inte så ofta som man kanske kan vill göra, men kanske vartannat år, eller så? Vi har en sån plan och testar det.
+Q34: Har ni också någon form av kontrakt med de som ja, de som ni säljer till. Hur lång tid är erat system skulle kunna vara nere? Vi kan säga en godtagbar tid så.
+A: Yes det finns SLA.er på det. Så det finns Det det finns mer generellt sån, men sen finns det också ibland andra krav förhandlade på specifika kunder.
+Q35: How do you ensure that your Services run as cost efficient as possible.
+A: Ja vi använder ju Azure och i Azure finns det verktyg för att övervaka kostnaden. Så idag är ju det vi använder att vi. Ja, men de verktyg som finns där vi får rapporter varje månad på vad som kostar hur mycket hur fördelningen ser ut, vad som har ökat sedan sist. Vi har inför året och under åren så uppdaterar vi också budgeten från vad det får kosta så att vi kan se. När vi gör förändringar när vi skalar  upp för mer kunder och sånt så är det ju ofta en kostnadsökning där vi får ju planera också för det. Så är det någonting som vi har översyn på. Ofta en gång i kvartalet.
+Q36: How do you ensure scalability in your system management.
+A: Ja, det är stora förändring för att hantera det är ju just kubenet, för det är där vi ser att vi kan få till en riktigt bra skalbarhet. Fortsätta med virtuella maskiner kräver en hel del personal och resurser och kunskaper för att få det rätt. Men genom att lägga kubenetes ovanpå och abstrahera bort den nivån så. Kan vi skala upp det mycket lättare.
+Q37: Do you have any practices surrounding handling of private documentation and internal data storage?
+A: Med private menar du hemlig information eller vilken eller våra interna dokument får vara.
+Q38: Ja precis intern information om man säger så.
+A: Ja vi har ju rutiner. För vart det ska sparas, vi har Ju lagringsplatser för sådant, så vi har ju rutin vart de ska läggas upp så att rätt personer har varit i rätt typ av dokument. Och att det ska spara säkert där.
+Q39: Då ska jag bara ta 3 snabba här då som slutfrågor. In what areas do you think that your organisation could improv with work with system maintenance? Det har vi också varit inne lite på, men är det någonting mer du skulle vilja tillägga då?
+A: Som sagt, så tror jag övergången mer och mer till kubenetes kommer påtvingad att vi gör en förändring här och det är någonting som vi jobbar på. Få också in mer CICD är någonting efterfrågar så att vi är mer continuous development och inte bara på funktionsförändringar utan också på infrastrukturen. Vi vill göra continous integration också på infrastrukturdelarna. Det kan rulla ut hela tiden. Azure-uppdateringar och så vidare, så det är en förändring vi håller på med. Vi gör ju också rekrytering, söker folk inom det här området för att vi behöver bli starkare här.
+Q40: Har du något annat du skulle vilja lägga till som är viktigt som vi inte har frågat om nu?
+A: Nej, jag har. Jag vet inte riktigt det syftet med rapporten, så det. Svårt att säga vad som saknas.
+
+
+Appendix 3 is our categorization of the interview questions. Where we sort the questions into what we consider to be strengths and weaknesses, we also include what part we are referring to of a question. As in if the questions strength is “A” we will write that it regards “A”.  As there can be multiple questions that refer to the same strength or weakness there can be multiple questions mentioned in one column.
+The first column is which question being mentioned, the 2nd one has the subject, such as documentation, and the 3rd is the category of strength or weakness that we assign.
+
+Interview 1
+Answer to Question
+Subject
+Category
+Q2
+Inhouse ITSM model
+Strength
+Q4
+Communication and testing
+Strength
+Q7
+Multiple responsibilities
+Strength / Weakness
+Q8
+Few consultants
+
+Strength
+Q12, Q42
+Lots of documentation
+Strength
+Q16
+Reactive, not proactive
+Weakness
+Q18
+SM importance
+Strength
+Q19
+Security and testing
+Strength
+Q21
+Working with large companies
+Strength
+Q23, Q33, Q34
+Remote handling
+Strength
+Q26
+Helpdesk
+Strength
+Q30
+Little contact with customers
+Weakness
+Q37
+Incident management
+Strength
+Q41
+Scale up
+Strength
+Interview 2
+Answer to Question
+Subject
+Category
+Q5, Q12 och Q17
+Change managment
+Strength
+Q6 och Q7 
+Training that is continous
+Strength
+Q8
+People can have multiple rolls and multiple people on rolls
+Strength
+Q13
+Redundance 
+Strength
+Q13
+Time efficency
+Weakness
+Q14,Q18,  Q36
+Change log and documentation, automation
+Strength
+Q16
+scanning best practices
+Strength
+Q20
+Time of report affects how it is reported and handled
+Weakness
+Q22
+Service desk
+Strength
+Q23
+Experts in company
+Strength
+Q25
+Ansvar, hanterande av incidenter/problem
+Weakness
+Q29
+Changes or release
+Strength
+Q32 och Q33
+Disaster recovery
+Strength
+Q34
+SLA
+Strength
+Q35
+Azure monitoring of costs
+Strength
+Q37, 38
+Access security
+Strength
+Appendix 3
